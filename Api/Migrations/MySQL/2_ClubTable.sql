@@ -1,0 +1,15 @@
+﻿CREATE TABLE club(
+  club_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  club_name VARCHAR(50) NOT NULL,
+  club_pais VARCHAR(50) NOT NULL,
+  PRIMARY KEY(club_id),
+  UNIQUE INDEX UQ_club_nombre_club_pais(club_name, club_pais)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO club(club_name, club_pais) 
+VALUES
+('S.C. INTERNACIONAL', 'BRASIL'),
+('FC LOKOMOTIV ', 'RUSIA'),
+('S. V. WERDER BREMEN', 'ALEMANIA'),
+('UNIVERSITARIO DE DEPORTES', 'PERU'),
+('UNIVERSITARIO DE DEPORTES', 'PERU');
